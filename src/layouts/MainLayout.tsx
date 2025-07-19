@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Header } from "@/components/common/Header";
 import { Footer } from "@/components/common/Footer";
+import { Analytics } from '@vercel/analytics/react';
 
 export function MainLayout() {
   return (
@@ -10,6 +11,7 @@ export function MainLayout() {
         <Outlet />
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }

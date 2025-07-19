@@ -1,10 +1,15 @@
+import { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "@/layouts/MainLayout";
-import HomePage from "@/pages/Home";
-import AboutPage from "@/pages/About";
-import TimelinePage from "@/pages/Timeline";
-import SponsorPage from "@/pages/Sponsor";
-import FaqPage from "@/pages/Faq";
+import { MainLayout } from "@/layouts/MainLayout";
+
+// Lazy load pages for code splitting
+const HomePage = lazy(() => import("@/pages/Home"));
+const AboutPage = lazy(() => import("@/pages/About"));
+const TimelinePage = lazy(() => import("@/pages/Timeline"));
+const SponsorPage = lazy(() => import("@/pages/Sponsor"));
+const FaqPage = lazy(() => import("@/pages/Faq"));
+
+const suspenseFallback = <div className="w-full h-screen flex items-center justify-center bg-background text-primary animate-pulse">Loading...</div>;
 
 const router = createBrowserRouter([
   {
@@ -13,23 +18,23 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />,
+        element: <Suspense fallback={suspenseFallback}><HomePage /></Suspense>,
       },
       {
         path: "about",
-        element: <AboutPage />,
+        element: <Suspense fallback={suspenseFallback}><AboutPage /></Suspense>,
       },
       {
         path: "timeline",
-        element: <TimelinePage />,
+        element: <Suspense fallback={suspenseFallback}><TimelinePage /></Suspense>,
       },
       {
         path: "sponsor",
-        element: <SponsorPage />,
+        element: <Suspense fallback={suspenseFallback}><SponsorPage /></Suspense>,
       },
       {
         path: "faq",
-        element: <FaqPage />,
+        element: <Suspense fallback={suspenseFallback}><FaqPage /></Suspense>,
       },
     ],
   },

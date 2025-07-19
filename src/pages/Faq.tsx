@@ -4,6 +4,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
+import { Seo } from '@/components/common/Seo';
 
 const faqItems = [
   {
@@ -35,7 +36,13 @@ const faqItems = [
 
 const Faq = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground p-4 sm:p-6 md:p-8">
+    <>
+      <Seo 
+        title="FAQ - Pertanyaan Umum"
+        description="Temukan jawaban atas pertanyaan yang sering diajukan mengenai IMCESFA. Informasi tentang pendaftaran, jadwal, dan peraturan."
+        keywords="FAQ IMCESFA, pertanyaan umum, cara daftar, biaya kompetisi, jadwal acara"
+      />
+      <div className="min-h-screen bg-background text-foreground p-4 sm:p-6 md:p-8">
       <div className="max-w-4xl mx-auto">
         <div className="w-full mb-12 p-8 text-center bg-black/20 backdrop-blur-sm border border-primary/20 rounded-lg">
           <h1 className="text-4xl md:text-5xl font-bold text-shadow-primary">
@@ -56,6 +63,7 @@ const Faq = () => {
         </AccordionRoot>
       </div>
     </div>
+    </>
   );
 };
 

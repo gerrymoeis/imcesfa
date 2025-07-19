@@ -1,6 +1,7 @@
 import { Frame } from "@/components/ui/frame";
 import { Clock } from "lucide-react";
 import { DialogRoot, DialogTrigger, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { Seo } from '@/components/common/Seo';
 
 
 const timelineEvents = [
@@ -44,7 +45,13 @@ const timelineEvents = [
 
 const TimelinePage = () => {
   return (
-    <div className="relative py-24 sm:py-32">
+    <>
+      <Seo 
+        title="Linimasa Acara"
+        description="Jadwal dan tahapan penting IMCESFA. Ikuti setiap tanggal krusial dari pendaftaran hingga pengumuman pemenang."
+        keywords="Jadwal IMCESFA, timeline kompetisi, tanggal penting, pendaftaran, technical meeting, hari kompetisi"
+      />
+      <div className="relative py-24 sm:py-32">
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:30px_30px]" />
@@ -145,6 +152,7 @@ const TimelinePage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -5,6 +5,7 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
+import { Seo } from '@/components/common/Seo';
 
 const sponsors = [
   {
@@ -41,7 +42,13 @@ const sponsors = [
 
 const Sponsor = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground p-4 sm:p-6 md:p-8">
+    <>
+      <Seo 
+        title="Sponsor Kami"
+        description="Terima kasih kepada para sponsor yang telah mendukung IMCESFA. Lihat daftar partner dan sponsor kami."
+        keywords="Sponsor IMCESFA, partner kompetisi, sponsorship teknologi, dukungan acara IT"
+      />
+      <div className="min-h-screen bg-background text-foreground p-4 sm:p-6 md:p-8">
       <div className="max-w-7xl mx-auto">
         <div className="w-full mb-12 p-8 text-center bg-black/20 backdrop-blur-sm border border-primary/20 rounded-lg">
             <h1 className="text-4xl md:text-5xl font-bold text-shadow-primary">
@@ -80,6 +87,7 @@ const Sponsor = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
