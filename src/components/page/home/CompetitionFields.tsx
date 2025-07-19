@@ -39,7 +39,7 @@ const CompetitionFields = () => {
         </p>
       </div>
       <TabsRoot defaultValue="technology">
-        <TabsList>
+        <TabsList className="flex-wrap justify-center">
           {competitionFields.map((field) => (
             <TabsTrigger key={field.value} value={field.value}>
               {field.title}

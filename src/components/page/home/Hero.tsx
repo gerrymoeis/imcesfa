@@ -111,7 +111,7 @@ const Hero = () => {
       </motion.div>
 
       {/* Main Content Frame */}
-      <div className="relative w-full max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative [--color-accent:hsl(300_100%_70%)]">
           <Frame
             enableBackdropBlur
@@ -143,10 +143,10 @@ const Hero = () => {
             ]}
           />
 
-          <div className="relative p-12 md:p-16 lg:p-20">
+          <div className="relative p-8 sm:p-12 md:p-16 lg:p-20">
             {/* Stats indicators */}
-            <div className="absolute top-8 right-8 flex gap-4">
-              <div className="w-16 h-16 relative [--color-primary:hsl(210_100%_50%)]">
+            <div className="absolute top-4 right-4 sm:top-8 sm:right-8 flex gap-2 sm:gap-4">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 relative [--color-primary:hsl(210_100%_50%)]">
                 <Frame
                   className="drop-shadow-lg drop-shadow-primary/40"
                   paths={[
@@ -177,7 +177,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-16 h-16 relative [--color-accent:hsl(0_100%_50%)]">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 relative [--color-accent:hsl(0_100%_50%)]">
                 <Frame
                   className="drop-shadow-lg drop-shadow-accent/40"
                   paths={[
@@ -220,7 +220,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 <span className="block text-shadow-xl text-shadow-primary/60 bg-gradient-to-r from-white via-primary to-accent bg-clip-text text-transparent">
                   Era Baru
                 </span>
@@ -228,7 +228,7 @@ const Hero = () => {
                   Kompetisi Digital
                 </span>
               </h1>
-              <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-3xl">
+              <p className="mt-8 text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl">
                 Jelajahi masa depan teknologi dan kreativitas dalam acara tahunan
                 terbesar kami. Bergabunglah dengan para inovator, developer, dan
                 desainer.

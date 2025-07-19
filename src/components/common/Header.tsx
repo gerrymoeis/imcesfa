@@ -29,11 +29,11 @@ export function Header() {
   }, [isMenuOpen]);
   return (
     <header className="fixed top-0 left-0 right-0 z-50 isolate">
-      <div className="h-18 mt-2 mx-2 md:-mt-px md:-mx-px flex">
+      <div className="h-18 mt-2 mx-2 lg:-mt-px lg:-mx-px flex">
         {/* Left decorative frame */}
         <div
           className={twMerge([
-            "size-full relative -mr-[11px] hidden md:block",
+            "size-full relative -mr-[11px] hidden lg:block",
             "[--color-frame-1-stroke:var(--color-primary)]/90",
             "[--color-frame-1-fill:var(--color-primary)]/8",
             "[--color-frame-2-stroke:var(--color-primary)]/23",
@@ -76,10 +76,10 @@ export function Header() {
         </div>
 
         {/* Main content frame */}
-        <div className="flex md:container h-full relative flex-none w-full">
+        <div className="flex lg:container h-full relative flex-none w-full">
           <div
             className={twMerge([
-              "flex-none h-full px-14 relative w-full md:w-auto",
+              "flex-none h-full px-14 relative w-full lg:w-auto",
               "[--color-frame-1-stroke:var(--color-primary)]",
               "[--color-frame-1-fill:var(--color-primary)]/20",
               "[--color-frame-2-stroke:var(--color-primary)]/57",
@@ -167,7 +167,7 @@ export function Header() {
                 IMCESFA
               </NavLink>
               {/* Desktop Nav */}
-              <nav className="hidden md:flex gap-8 font-medium [&>a]:hover:text-shadow-lg [&>a]:hover:text-shadow-primary/40">
+              <nav className="hidden lg:flex gap-8 font-medium [&>a]:hover:text-shadow-lg [&>a]:hover:text-shadow-primary/40">
                 {navLinks.map((link) => (
                   <NavLink
                     key={link.path}
@@ -186,7 +186,7 @@ export function Header() {
               </nav>
 
               {/* Mobile Menu Toggle */}
-              <div className="md:hidden">
+              <div className="lg:hidden">
                 <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-foreground">
                   {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
@@ -197,7 +197,7 @@ export function Header() {
           {/* Right section - optional, can be removed if not needed */}
           <div
             className={twMerge([
-              "w-full relative -ml-[25px] md:flex items-center justify-end pe-8 hidden",
+              "w-full relative -ml-[25px] lg:flex items-center justify-end pe-8 hidden",
               "[--color-frame-1-stroke:var(--color-primary)]",
               "[--color-frame-1-fill:var(--color-primary)]/10",
               "[--color-frame-2-stroke:var(--color-primary)]/23",
@@ -241,7 +241,7 @@ export function Header() {
                 },
               ]}
             />
-            <div className="hidden md:flex items-center gap-4 relative z-10">
+            <div className="hidden lg:flex items-center gap-4 relative z-10">
               <Button as="a" href="#" variant="default" shape="default" className="text-sm px-3 py-1.5">
                 Daftar Sekarang
               </Button>
@@ -255,7 +255,7 @@ export function Header() {
         {/* Right decorative frame */}
         <div
           className={twMerge([
-            "size-full relative -ml-[18px] hidden md:block",
+            "size-full relative -ml-[18px] hidden lg:block",
             "[--color-frame-1-stroke:var(--color-primary)]/90",
             "[--color-frame-1-fill:var(--color-primary)]/8",
             "[--color-frame-2-stroke:var(--color-primary)]/23",
@@ -306,7 +306,7 @@ export function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden fixed inset-0 top-18 bg-background/95 backdrop-blur-sm z-[-1]"
+            className="lg:hidden fixed inset-0 top-18 bg-background/95 backdrop-blur-sm z-[-1]"
           >
             <motion.nav
               variants={{
