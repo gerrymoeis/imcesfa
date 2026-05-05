@@ -74,7 +74,7 @@ const AboutPage = () => {
                 <p className="mt-4 text-4xl md:text-5xl font-bold tracking-tight text-white">
                   Mengenal IMCESFA Lebih Dekat
                 </p>
-                <p className="mt-8 text-lg md:text-xl leading-8 text-gray-300">
+                <p className="mt-8 text-lg md:text-xl leading-8 text-muted-foreground">
                   IMCESFA adalah wadah bagi para talenta digital untuk berinovasi, berkolaborasi, dan berkompetisi dalam semangat sportivitas dan keunggulan teknologi.
                 </p>
               </div>
@@ -116,7 +116,7 @@ const AboutPage = () => {
                 <p className="mt-4 text-4xl md:text-5xl font-bold tracking-tight text-white">
                   Kenali Tim di Balik Layar
                 </p>
-                <p className="mt-8 text-lg md:text-xl leading-8 text-gray-300">
+                <p className="mt-8 text-lg md:text-xl leading-8 text-muted-foreground">
                   Tim kami terdiri dari individu-individu bersemangat yang berdedikasi untuk menyukseskan acara ini.
                 </p>
               </div>
@@ -160,7 +160,7 @@ const AboutPage = () => {
                     <DialogContent className="max-w-lg">
                       <DialogTitle>{person.name}</DialogTitle>
                       <DialogDescription>{person.role}</DialogDescription>
-                      <p className="mt-4 text-gray-300">{person.bio}</p>
+                      <p className="mt-4 text-muted-foreground">{person.bio}</p>
                     </DialogContent>
                   </DialogRoot>
                 ))}
@@ -172,7 +172,7 @@ const AboutPage = () => {
                 <p className="mt-4 text-4xl md:text-5xl font-bold tracking-tight text-white">
                   Punya Pertanyaan atau Masukan?
                 </p>
-                <p className="mt-8 text-lg md:text-xl leading-8 text-gray-300">
+                <p className="mt-8 text-lg md:text-xl leading-8 text-muted-foreground">
                   Kami senang mendengar dari Anda. Isi formulir di bawah ini untuk menghubungi tim kami.
                 </p>
               </div>
@@ -205,7 +205,7 @@ const AboutPage = () => {
                   <div className="relative p-8">
                       <form action="#" method="POST" className="space-y-8">
                           <div>
-                              <label htmlFor="name" className="block text-base font-semibold leading-6 text-gray-200 text-left mb-2">
+                              <label htmlFor="name" className="block text-base font-semibold leading-6 text-foreground text-left mb-2">
                                 Nama Lengkap <span className="text-accent">*</span>
                               </label>
                               <div className="mt-2">
@@ -221,7 +221,7 @@ const AboutPage = () => {
                               </div>
                           </div>
                           <div>
-                              <label htmlFor="email" className="block text-base font-semibold leading-6 text-gray-200 text-left mb-2">
+                              <label htmlFor="email" className="block text-base font-semibold leading-6 text-foreground text-left mb-2">
                                 Email <span className="text-accent">*</span>
                               </label>
                               <div className="mt-2">
@@ -237,7 +237,7 @@ const AboutPage = () => {
                               </div>
                           </div>
                           <div>
-                              <label htmlFor="message" className="block text-base font-semibold leading-6 text-gray-200 text-left mb-2">
+                              <label htmlFor="message" className="block text-base font-semibold leading-6 text-foreground text-left mb-2">
                                 Pesan <span className="text-accent">*</span>
                               </label>
                               <div className="mt-2">

@@ -90,7 +90,7 @@ const TimelinePage = () => {
               <p className="mt-4 text-4xl md:text-5xl font-bold tracking-tight text-white">
                 Jadwal dan Tahapan Penting
               </p>
-              <p className="mt-8 text-lg md:text-xl leading-8 text-gray-300">
+              <p className="mt-8 text-lg md:text-xl leading-8 text-muted-foreground">
                 Ikuti setiap tahapan penting dari acara IMCESFA. Jangan sampai terlewatkan informasi dan tanggal-tanggal krusial selama kompetisi berlangsung.
               </p>
             </div>
@@ -129,9 +129,9 @@ const TimelinePage = () => {
                                 ]}
                             />
                             <div className="relative p-6">
-                                <time className="mb-2 text-sm font-normal leading-none text-gray-400">{event.date}</time>
+                                <time className="mb-2 text-sm font-normal leading-none text-muted-foreground">{event.date}</time>
                                 <h3 className="text-xl font-semibold text-white">{event.title}</h3>
-                                <p className="mt-3 text-base font-normal text-gray-300 leading-relaxed">{event.description}</p>
+                                <p className="mt-3 text-base font-normal text-muted-foreground leading-relaxed">{event.description}</p>
                                 <DialogTrigger className="mt-6 px-0 text-primary hover:text-accent underline-offset-4 hover:underline min-h-[44px] inline-flex items-center">
                                     Selengkapnya &rarr;
                                 </DialogTrigger>
@@ -140,7 +140,7 @@ const TimelinePage = () => {
                         <DialogContent className="max-w-xl">
                             <DialogTitle>{event.title}</DialogTitle>
                             <DialogDescription>{event.date}</DialogDescription>
-                            <p className="mt-4 text-gray-300">{event.details}</p>
+                            <p className="mt-4 text-muted-foreground">{event.details}</p>
                         </DialogContent>
                     </DialogRoot>
                   </div>

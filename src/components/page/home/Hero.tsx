@@ -143,7 +143,7 @@ const Hero = () => {
             ]}
           />
 
-          <div className="relative p-8 sm:p-12 md:p-16 lg:p-20">
+          <div className="relative p-8 sm:p-12 md:p-16 lg:p-20 bg-background-elevated/40 backdrop-blur-sm">
             {/* Stats indicators */}
             <div className="absolute top-4 right-4 sm:top-8 sm:right-8 flex gap-2 sm:gap-4">
               <div className="w-12 h-12 sm:w-16 sm:h-16 relative [--color-primary:hsl(210_100%_50%)]">
@@ -221,10 +221,10 @@ const Hero = () => {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                <span className="block text-shadow-xl text-shadow-primary/60 bg-gradient-to-r from-white via-primary to-accent bg-clip-text text-transparent">
+                <span className="block text-primary drop-shadow-[0_0_20px_var(--color-primary)]">
                   Era Baru
                 </span>
-                <span className="block text-shadow-xl text-shadow-accent/60 bg-gradient-to-r from-accent via-white to-primary bg-clip-text text-transparent">
+                <span className="block text-accent drop-shadow-[0_0_20px_var(--color-accent)]">
                   Kompetisi Digital
                 </span>
               </h1>

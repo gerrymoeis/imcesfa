@@ -72,7 +72,7 @@ const Features = () => {
               <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Jelajahi Dunia Kompetisi Kami
               </p>
-              <p className="mt-6 text-lg leading-8 text-gray-300">
+              <p className="mt-6 text-lg leading-8 text-muted-foreground">
                 Kami menyediakan berbagai bidang kompetisi yang dirancang untuk mengasah keahlian dan mendorong batas inovasi Anda.
               </p>
             </div>
@@ -111,7 +111,7 @@ const Features = () => {
                         {feature.icon}
                         {feature.title}
                       </dt>
-                      <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-400">
+                      <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-muted-foreground">
                         <p className="flex-auto">{feature.description}</p>
                       </dd>
                     </div>

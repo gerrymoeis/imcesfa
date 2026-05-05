@@ -93,7 +93,7 @@ function DialogTitle({ children, className }: { children: ReactNode, className?:
 
 function DialogDescription({ children, className }: { children: ReactNode, className?: string }) {
   const api = useDialog();
-  return <p {...api.getDescriptionProps()} className={twMerge("mt-2 text-gray-400", className)}>{children}</p>;
+  return <p {...api.getDescriptionProps()} className={twMerge("mt-2 text-muted-foreground", className)}>{children}</p>;
 }
 
 function DialogCloseTrigger({ className }: { className?: string }) {
@@ -101,7 +101,7 @@ function DialogCloseTrigger({ className }: { className?: string }) {
   return (
     <button 
       {...api.getCloseTriggerProps()} 
-      className={twMerge("absolute top-4 right-4 min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2", className)}
+      className={twMerge("absolute top-4 right-4 min-w-[44px] min-h-[44px] flex items-center justify-center text-muted-foreground hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2", className)}
       aria-label="Close dialog"
     >
       <X size={24} />

@@ -89,7 +89,7 @@
 /* Apply letter-spacing selectively for better readability with glow effects */
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: var(--heading-letter-spacing);
-  text-shadow: 0 0 20px currentColor;
+  text-shadow: 0 0 10px currentColor; /* Reduced from 20px to 10px */
 }
 
 p, span, div {
