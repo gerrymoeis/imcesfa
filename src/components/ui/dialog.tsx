@@ -99,7 +99,11 @@ function DialogDescription({ children, className }: { children: ReactNode, class
 function DialogCloseTrigger({ className }: { className?: string }) {
   const api = useDialog();
   return (
-    <button {...api.getCloseTriggerProps()} className={twMerge("absolute top-4 right-4 text-gray-400 hover:text-white transition-colors", className)}>
+    <button 
+      {...api.getCloseTriggerProps()} 
+      className={twMerge("absolute top-4 right-4 min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2", className)}
+      aria-label="Close dialog"
+    >
       <X size={24} />
     </button>
   );

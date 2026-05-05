@@ -85,22 +85,22 @@ const TimelinePage = () => {
           />
 
           <div className="relative p-12">
-            <div className="mx-auto max-w-3xl lg:text-center">
+            <div className="mx-auto max-w-3xl lg:text-center mb-4">
               <h2 className="text-base font-semibold leading-7 text-primary">Linimasa Acara</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              <p className="mt-4 text-4xl md:text-5xl font-bold tracking-tight text-white">
                 Jadwal dan Tahapan Penting
               </p>
-              <p className="mt-6 text-lg leading-8 text-gray-300">
+              <p className="mt-8 text-lg md:text-xl leading-8 text-gray-300">
                 Ikuti setiap tahapan penting dari acara IMCESFA. Jangan sampai terlewatkan informasi dan tanggal-tanggal krusial selama kompetisi berlangsung.
               </p>
             </div>
 
             <div className="mx-auto mt-16 max-w-3xl">
-              <div className="relative border-l-2 border-primary/30">
+              <div className="relative border-l-2 border-primary/40">
                 {timelineEvents.map((event, index) => (
-                  <div key={index} className="mb-10 ml-6">
-                    <span className="absolute -left-[1.1rem] flex h-8 w-8 items-center justify-center rounded-full bg-accent/20 ring-8 ring-background">
-                      <Clock className="h-5 w-5 text-accent" />
+                  <div key={index} className="mb-12 ml-8">
+                    <span className="absolute -left-[1.25rem] flex h-10 w-10 items-center justify-center rounded-full bg-accent/30 ring-8 ring-background">
+                      <Clock className="h-6 w-6 text-accent" />
                     </span>
                     <DialogRoot>
                         <div className="relative p-4">
@@ -111,8 +111,8 @@ const TimelinePage = () => {
                                     show: true,
                                     style: {
                                       strokeWidth: '1',
-                                      stroke: 'var(--color-accent)/20',
-                                      fill: 'var(--color-accent)/5',
+                                      stroke: 'var(--color-accent)/30',
+                                      fill: 'var(--color-accent)/10',
                                     },
                                     path: [
                                       ['M', '10', '0'],
@@ -128,11 +128,11 @@ const TimelinePage = () => {
                                   },
                                 ]}
                             />
-                            <div className="relative p-4">
-                                <time className="mb-1 text-sm font-normal leading-none text-gray-400">{event.date}</time>
-                                <h3 className="text-lg font-semibold text-white">{event.title}</h3>
-                                <p className="mt-2 text-base font-normal text-gray-400">{event.description}</p>
-                                <DialogTrigger className="mt-4 px-0 text-primary hover:text-accent underline-offset-4 hover:underline">
+                            <div className="relative p-6">
+                                <time className="mb-2 text-sm font-normal leading-none text-gray-400">{event.date}</time>
+                                <h3 className="text-xl font-semibold text-white">{event.title}</h3>
+                                <p className="mt-3 text-base font-normal text-gray-300 leading-relaxed">{event.description}</p>
+                                <DialogTrigger className="mt-6 px-0 text-primary hover:text-accent underline-offset-4 hover:underline min-h-[44px] inline-flex items-center">
                                     Selengkapnya &rarr;
                                 </DialogTrigger>
                             </div>

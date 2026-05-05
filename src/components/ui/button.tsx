@@ -4,22 +4,23 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 const buttonVariants = cva(
   [
-    "group font-bold mb-2 relative px-8 py-2 cursor-pointer transition-all [&:hover_svg]:drop-shadow-xl outline-none active:scale-95",
+    "group font-bold mb-2 relative px-8 py-3 min-h-[44px] cursor-pointer transition-all [&:hover_svg]:drop-shadow-xl outline-none active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100",
     "[&>span]:relative [&>span]:flex [&>span]:items-center [&>span]:justify-center [&>span]:group-hover:text-shadow-lg",
+    "focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background",
   ],
   {
     variants: {
       variant: {
         default:
-          "[--color-frame-1-stroke:var(--color-primary)] [--color-frame-1-fill:var(--color-primary)]/22 [--color-frame-2-stroke:var(--color-primary)] [--color-frame-2-fill:var(--color-primary)]/10 text-primary-foreground [&:hover_svg]:drop-shadow-primary/50 [&>span]:group-hover:text-shadow-primary/50 hover:drop-shadow-[0_0_8px_var(--color-primary)]",
+          "[--color-frame-1-stroke:var(--color-primary)] [--color-frame-1-fill:var(--color-primary)]/30 [--color-frame-2-stroke:var(--color-primary)] [--color-frame-2-fill:var(--color-primary)]/15 text-primary-foreground [&:hover_svg]:drop-shadow-primary/50 [&>span]:group-hover:text-shadow-primary/50 hover:drop-shadow-[0_0_8px_var(--color-primary)]",
         accent:
-          "[--color-frame-1-stroke:var(--color-accent)] [--color-frame-1-fill:var(--color-accent)]/40 [--color-frame-2-stroke:var(--color-accent)] [--color-frame-2-fill:var(--color-accent)]/20 text-accent-foreground [&:hover_svg]:drop-shadow-accent/50 [&>span]:group-hover:text-shadow-accent/50",
+          "[--color-frame-1-stroke:var(--color-accent)] [--color-frame-1-fill:var(--color-accent)]/50 [--color-frame-2-stroke:var(--color-accent)] [--color-frame-2-fill:var(--color-accent)]/25 text-accent-foreground [&:hover_svg]:drop-shadow-accent/50 [&>span]:group-hover:text-shadow-accent/50",
         destructive:
-          "[--color-frame-1-stroke:var(--color-destructive)] [--color-frame-1-fill:var(--color-destructive)]/22 [--color-frame-2-stroke:var(--color-destructive)] [--color-frame-2-fill:var(--color-destructive)]/10 text-destructive-foreground [&:hover_svg]:drop-shadow-destructive/50 [&>span]:group-hover:text-shadow-destructive/50",
+          "[--color-frame-1-stroke:var(--color-destructive)] [--color-frame-1-fill:var(--color-destructive)]/30 [--color-frame-2-stroke:var(--color-destructive)] [--color-frame-2-fill:var(--color-destructive)]/15 text-destructive-foreground [&:hover_svg]:drop-shadow-destructive/50 [&>span]:group-hover:text-shadow-destructive/50",
         secondary:
-          "[--color-frame-1-stroke:var(--color-secondary)] [--color-frame-1-fill:var(--color-secondary)]/15 [--color-frame-2-stroke:var(--color-secondary)] [--color-frame-2-fill:var(--color-secondary)]/10 text-secondary-foreground [&:hover_svg]:drop-shadow-secondary/50 [&>span]:group-hover:text-shadow-secondary/50 hover:drop-shadow-[0_0_8px_var(--color-secondary)]",
+          "[--color-frame-1-stroke:var(--color-secondary)] [--color-frame-1-fill:var(--color-secondary)]/20 [--color-frame-2-stroke:var(--color-secondary)] [--color-frame-2-fill:var(--color-secondary)]/15 text-secondary-foreground [&:hover_svg]:drop-shadow-secondary/50 [&>span]:group-hover:text-shadow-secondary/50 hover:drop-shadow-[0_0_8px_var(--color-secondary)]",
         success:
-          "[--color-frame-1-stroke:var(--color-success)] [--color-frame-1-fill:var(--color-success)]/22 [--color-frame-2-stroke:var(--color-success)] [--color-frame-2-fill:var(--color-success)]/10 text-success-foreground [&:hover_svg]:drop-shadow-success/50 [&>span]:group-hover:text-shadow-success/50",
+          "[--color-frame-1-stroke:var(--color-success)] [--color-frame-1-fill:var(--color-success)]/30 [--color-frame-2-stroke:var(--color-success)] [--color-frame-2-fill:var(--color-success)]/15 text-success-foreground [&:hover_svg]:drop-shadow-success/50 [&>span]:group-hover:text-shadow-success/50",
         link: "text-primary underline-offset-4 hover:underline",
       },
       shape: {

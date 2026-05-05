@@ -65,9 +65,9 @@ function AccordionItem({
     >
       <div
         className={twMerge([
-          "relative px-6 pt-3 pb-5 data-[state=open]:drop-shadow-[0_0px_20px_var(--color-primary)]",
+          "relative px-6 pt-3 pb-6 data-[state=open]:drop-shadow-[0_0px_20px_var(--color-primary)]",
           "[--color-frame-1-stroke:var(--color-primary)]",
-          "[--color-frame-1-fill:var(--color-primary)]/20",
+          "[--color-frame-1-fill:var(--color-primary)]/25",
           "[--color-frame-2-stroke:var(--color-primary)]",
           "[--color-frame-2-fill:transparent]",
           className,
@@ -96,15 +96,16 @@ function AccordionTrigger({
     <h3>
       <button
         className={twMerge([
-          "flex items-center data-[state=open]:text-shadow-lg text-shadow-primary font-bold cursor-pointer w-full group py-2 -my-2 data-[state=open]:pt-3.5 transition-[padding] duration-100",
+          "flex items-center data-[state=open]:text-shadow-lg text-shadow-primary font-bold cursor-pointer w-full group py-3 -my-2 data-[state=open]:pt-4 transition-[padding] duration-100 min-h-[44px]",
+          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2",
           className,
         ])}
         {...api.getItemTriggerProps({
           value: context.value,
         })}
       >
-        <FilePenLine className="size-4.5 me-2.5" /> {children}
-        <ChevronDown className="ms-auto size-4 group-data-[state=open]:rotate-180" />
+        <FilePenLine className="size-5 me-3" /> {children}
+        <ChevronDown className="ms-auto size-5 group-data-[state=open]:rotate-180 transition-transform" />
       </button>
     </h3>
   );
@@ -120,7 +121,7 @@ function AccordionContent({
   return (
     <div
       className={twMerge([
-        "py-2 mt-1 opacity-80 data-[state=open]:animate-in data-[state=open]:zoom-in-95 data-[state=open]:fade-in-0 data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=closed]:fade-out-0",
+        "py-3 mt-2 text-gray-300 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=closed]:animate-out data-[state=closed]:fade-out-0",
         className,
       ])}
       {...api.getItemContentProps({ value: context.value })}

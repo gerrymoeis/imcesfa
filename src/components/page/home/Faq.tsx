@@ -30,12 +30,12 @@ const faqItems = [
 
 const Faq = () => {
   return (
-    <section className="py-20">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-primary-foreground">
+    <section className="py-24">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground">
           Frequently Asked Questions
         </h2>
-        <p className="text-lg text-secondary-foreground mt-2">
+        <p className="text-lg md:text-xl text-gray-300 mt-4">
           Temukan jawaban untuk pertanyaan yang paling sering diajukan.
         </p>
       </div>

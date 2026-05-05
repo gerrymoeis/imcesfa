@@ -69,12 +69,12 @@ const AboutPage = () => {
             />
 
             <div className="relative p-12">
-              <div className="mx-auto max-w-3xl lg:text-center">
+              <div className="mx-auto max-w-3xl lg:text-center mb-4">
                 <h2 className="text-base font-semibold leading-7 text-primary">Tentang Acara</h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                <p className="mt-4 text-4xl md:text-5xl font-bold tracking-tight text-white">
                   Mengenal IMCESFA Lebih Dekat
                 </p>
-                <p className="mt-6 text-lg leading-8 text-gray-300">
+                <p className="mt-8 text-lg md:text-xl leading-8 text-gray-300">
                   IMCESFA adalah wadah bagi para talenta digital untuk berinovasi, berkolaborasi, dan berkompetisi dalam semangat sportivitas dan keunggulan teknologi.
                 </p>
               </div>
@@ -86,24 +86,24 @@ const AboutPage = () => {
                     <TabsTrigger value="mission">Misi</TabsTrigger>
                     <TabsTrigger value="history">Sejarah</TabsTrigger>
                   </TabsList>
-                  <TabsContent value="vision" className="mt-6 p-6 bg-black/20 rounded-lg border border-accent/20">
-                    <h3 className="text-xl font-bold text-accent">Visi Kami</h3>
-                    <p className="mt-4 text-gray-400">
+                  <TabsContent value="vision" className="mt-6 p-8 bg-black/30 rounded-lg border border-accent/30">
+                    <h3 className="text-2xl font-bold text-accent">Visi Kami</h3>
+                    <p className="mt-6 text-lg text-gray-300 leading-relaxed">
                       Menjadi tolok ukur kompetisi teknologi dan digital terdepan di Indonesia, yang melahirkan inovator-inovator kelas dunia yang siap menghadapi tantangan global.
                     </p>
                   </TabsContent>
-                  <TabsContent value="mission" className="mt-6 p-6 bg-black/20 rounded-lg border border-accent/20">
-                    <h3 className="text-xl font-bold text-accent">Misi Kami</h3>
-                    <ul className="mt-4 list-disc list-inside space-y-2 text-gray-400">
+                  <TabsContent value="mission" className="mt-6 p-8 bg-black/30 rounded-lg border border-accent/30">
+                    <h3 className="text-2xl font-bold text-accent">Misi Kami</h3>
+                    <ul className="mt-6 list-disc list-inside space-y-3 text-lg text-gray-300">
                       <li>Menyelenggarakan kompetisi yang adil, transparan, dan menantang.</li>
                       <li>Mendorong kolaborasi antara akademisi, industri, dan pemerintah.</li>
                       <li>Memberikan platform bagi peserta untuk menampilkan bakat dan karyanya.</li>
                       <li>Menginspirasi generasi muda untuk mencintai teknologi dan inovasi.</li>
                     </ul>
                   </TabsContent>
-                  <TabsContent value="history" className="mt-6 p-6 bg-black/20 rounded-lg border border-accent/20">
-                    <h3 className="text-xl font-bold text-accent">Sejarah Singkat</h3>
-                    <p className="mt-4 text-gray-400">
+                  <TabsContent value="history" className="mt-6 p-8 bg-black/30 rounded-lg border border-accent/30">
+                    <h3 className="text-2xl font-bold text-accent">Sejarah Singkat</h3>
+                    <p className="mt-6 text-lg text-gray-300 leading-relaxed">
                       Didirikan pada tahun 2020, IMCESFA berawal dari sebuah inisiatif kecil komunitas mahasiswa untuk menciptakan sebuah acara yang dapat mewadahi semangat kompetisi di bidang IT. Dari tahun ke tahun, kami terus bertumbuh menjadi salah satu acara kompetisi digital paling bergengsi dan dinantikan.
                     </p>
                   </TabsContent>
@@ -111,17 +111,17 @@ const AboutPage = () => {
               </div>
 
               {/* Team Section */}
-              <div className="mx-auto mt-24 max-w-7xl text-center">
+              <div className="mx-auto mt-32 max-w-7xl text-center">
                 <h2 className="text-base font-semibold leading-7 text-primary">Struktur Organisasi</h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                <p className="mt-4 text-4xl md:text-5xl font-bold tracking-tight text-white">
                   Kenali Tim di Balik Layar
                 </p>
-                <p className="mt-6 text-lg leading-8 text-gray-300">
+                <p className="mt-8 text-lg md:text-xl leading-8 text-gray-300">
                   Tim kami terdiri dari individu-individu bersemangat yang berdedikasi untuk menyukseskan acara ini.
                 </p>
               </div>
 
-              <div className="mx-auto mt-16 grid max-w-none grid-cols-1 gap-x-8 gap-y-20 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="mx-auto mt-20 grid max-w-none grid-cols-1 gap-x-8 gap-y-20 sm:grid-cols-2 lg:grid-cols-3">
                 {team.map((person) => (
                   <DialogRoot key={person.name}>
                     <DialogTrigger className="w-full h-full cursor-pointer group">
@@ -167,12 +167,12 @@ const AboutPage = () => {
               </div>
 
               {/* Contact Section */}
-              <div className="mx-auto mt-24 max-w-4xl text-center">
+              <div className="mx-auto mt-32 max-w-4xl text-center">
                 <h2 className="text-base font-semibold leading-7 text-primary">Hubungi Kami</h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                <p className="mt-4 text-4xl md:text-5xl font-bold tracking-tight text-white">
                   Punya Pertanyaan atau Masukan?
                 </p>
-                <p className="mt-6 text-lg leading-8 text-gray-300">
+                <p className="mt-8 text-lg md:text-xl leading-8 text-gray-300">
                   Kami senang mendengar dari Anda. Isi formulir di bawah ini untuk menghubungi tim kami.
                 </p>
               </div>
@@ -203,23 +203,52 @@ const AboutPage = () => {
                       ]}
                     />
                   <div className="relative p-8">
-                      <form action="#" method="POST" className="space-y-6">
+                      <form action="#" method="POST" className="space-y-8">
                           <div>
-                              <label htmlFor="name" className="block text-sm font-semibold leading-6 text-gray-200 text-left">Nama Lengkap</label>
-                              <div className="mt-2.5">
-                                  <Input type="text" name="name" id="name" autoComplete="name" placeholder="Nama Anda" />
+                              <label htmlFor="name" className="block text-base font-semibold leading-6 text-gray-200 text-left mb-2">
+                                Nama Lengkap <span className="text-accent">*</span>
+                              </label>
+                              <div className="mt-2">
+                                  <Input 
+                                    type="text" 
+                                    name="name" 
+                                    id="name" 
+                                    autoComplete="name" 
+                                    placeholder="Nama Anda"
+                                    required
+                                    aria-required="true"
+                                  />
                               </div>
                           </div>
                           <div>
-                              <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-200 text-left">Email</label>
-                              <div className="mt-2.5">
-                                  <Input type="email" name="email" id="email" autoComplete="email" placeholder="email@anda.com" />
+                              <label htmlFor="email" className="block text-base font-semibold leading-6 text-gray-200 text-left mb-2">
+                                Email <span className="text-accent">*</span>
+                              </label>
+                              <div className="mt-2">
+                                  <Input 
+                                    type="email" 
+                                    name="email" 
+                                    id="email" 
+                                    autoComplete="email" 
+                                    placeholder="email@anda.com"
+                                    required
+                                    aria-required="true"
+                                  />
                               </div>
                           </div>
                           <div>
-                              <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-200 text-left">Pesan</label>
-                              <div className="mt-2.5">
-                                  <Textarea name="message" id="message" rows={4} placeholder="Tulis pesan Anda di sini..." />
+                              <label htmlFor="message" className="block text-base font-semibold leading-6 text-gray-200 text-left mb-2">
+                                Pesan <span className="text-accent">*</span>
+                              </label>
+                              <div className="mt-2">
+                                  <Textarea 
+                                    name="message" 
+                                    id="message" 
+                                    rows={4} 
+                                    placeholder="Tulis pesan Anda di sini..."
+                                    required
+                                    aria-required="true"
+                                  />
                               </div>
                           </div>
                           <div className="mt-10">
