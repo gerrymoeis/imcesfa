@@ -65,11 +65,12 @@ function AccordionItem({
     >
       <div
         className={twMerge([
-          "relative px-6 pt-3 pb-6 data-[state=open]:drop-shadow-[0_0px_20px_var(--color-primary)]",
+          "relative px-6 pt-3 pb-6 data-[state=open]:drop-shadow-[0_0px_24px_var(--color-primary)]",
           "[--color-frame-1-stroke:var(--color-primary)]",
-          "[--color-frame-1-fill:var(--color-primary)]/25",
+          "[--color-frame-1-fill:var(--color-primary)]/30",
           "[--color-frame-2-stroke:var(--color-primary)]",
           "[--color-frame-2-fill:transparent]",
+          "bg-background-elevated/30 backdrop-blur-sm",
           className,
         ])}
         {...api.getItemProps({ value })}
@@ -121,7 +122,7 @@ function AccordionContent({
   return (
     <div
       className={twMerge([
-        "py-3 mt-2 text-gray-300 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=closed]:animate-out data-[state=closed]:fade-out-0",
+        "py-3 mt-2 text-muted-foreground data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=closed]:animate-out data-[state=closed]:fade-out-0",
         className,
       ])}
       {...api.getItemContentProps({ value: context.value })}

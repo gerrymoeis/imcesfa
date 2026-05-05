@@ -29,17 +29,17 @@ const competitionFields = [
 
 const CompetitionFields = () => {
   return (
-    <section className="py-20">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-primary-foreground">
+    <section className="py-24">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
           Bidang Kompetisi
         </h2>
-        <p className="text-lg text-secondary-foreground mt-2">
+        <p className="text-lg md:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
           Jelajahi berbagai kategori yang kami tawarkan.
         </p>
       </div>
-      <TabsRoot defaultValue="technology">
-        <TabsList className="flex-wrap justify-center">
+      <TabsRoot defaultValue="technology" className="max-w-5xl mx-auto">
+        <TabsList className="flex-wrap justify-center gap-4 mb-12">
           {competitionFields.map((field) => (
             <TabsTrigger key={field.value} value={field.value}>
               {field.title}
@@ -48,13 +48,15 @@ const CompetitionFields = () => {
         </TabsList>
         {competitionFields.map((field) => (
           <TabsContent key={field.value} value={field.value}>
-            <div className="flex flex-col md:flex-row items-center gap-8 p-6">
-              <div className="flex-shrink-0">{field.icon}</div>
-              <div className="text-center md:text-left">
-                <h3 className="text-3xl font-bold text-primary-foreground mb-3">
+            <div className="flex flex-col md:flex-row items-center gap-12 p-10 bg-background-elevated/50 rounded-lg border border-primary/20">
+              <div className="flex-shrink-0 p-6 bg-accent/10 rounded-lg border border-accent/30">
+                {field.icon}
+              </div>
+              <div className="text-center md:text-left space-y-4">
+                <h3 className="text-3xl md:text-4xl font-bold text-primary-foreground">
                   {field.title}
                 </h3>
-                <p className="text-lg text-secondary-foreground max-w-2xl">
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
                   {field.description}
                 </p>
               </div>

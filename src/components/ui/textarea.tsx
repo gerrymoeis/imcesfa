@@ -7,8 +7,8 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(({ classNa
   return (
     <textarea
       className={twMerge(
-        "flex min-h-[120px] w-full rounded-md border border-primary/30 bg-black/30 px-3 py-2 text-base text-gray-100 ring-offset-background placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
-        "focus:border-accent/50 focus:ring-accent/20 transition-colors",
+        "flex min-h-[120px] w-full rounded-md border border-primary/40 bg-background-elevated/80 px-3 py-2 text-base text-foreground ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+        "focus:border-accent/60 focus:ring-accent/30 transition-colors backdrop-blur-sm",
         className
       )}
       ref={ref}

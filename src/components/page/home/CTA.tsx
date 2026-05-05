@@ -30,13 +30,13 @@ const CTA = () => {
       <div className="relative">
         <Frame
           paths={customPaths}
-          className="[--color-primary:hsl(300_100%_70%)] [--color-frame-1-stroke:var(--color-primary)] [--color-frame-1-fill:var(--color-primary)/15]"
+          className="[--color-primary:hsl(300_100%_70%)] [--color-frame-1-stroke:var(--color-primary)] [--color-frame-1-fill:var(--color-primary)/20]"
         />
-        <div className="relative text-center px-6 py-20">
+        <div className="relative text-center px-6 py-20 bg-background-elevated/20 backdrop-blur-sm">
           <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground">
             Siap Menjadi Juara Berikutnya?
           </h2>
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mt-6 mb-10 leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mt-6 mb-10 leading-relaxed">
             Jangan lewatkan kesempatan untuk menguji kemampuan, memperluas jaringan, dan memenangkan hadiah menarik. Daftar sekarang dan jadilah bagian dari inovasi teknologi masa depan.
           </p>
           <Button variant="accent" className="px-12 py-4 text-lg">

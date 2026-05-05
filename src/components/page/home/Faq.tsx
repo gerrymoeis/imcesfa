@@ -35,7 +35,7 @@ const Faq = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground">
           Frequently Asked Questions
         </h2>
-        <p className="text-lg md:text-xl text-gray-300 mt-4">
+        <p className="text-lg md:text-xl text-muted-foreground mt-4">
           Temukan jawaban untuk pertanyaan yang paling sering diajukan.
         </p>
       </div>
