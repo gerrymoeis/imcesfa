@@ -3,8 +3,8 @@
 
 :root {
   --global-letter-spacing: 0em;
-  --heading-letter-spacing: 0.08em; /* Increased for better readability with glow effects */
-  --body-letter-spacing: 0.02em; /* Slight spacing for body text readability */
+  --heading-letter-spacing: 0.12em; /* Increased significantly for better readability with glow */
+  --body-letter-spacing: 0.04em; /* Increased for better text readability */
 }
 
 @theme {

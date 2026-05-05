@@ -86,24 +86,24 @@ const AboutPage = () => {
                     <TabsTrigger value="mission">Misi</TabsTrigger>
                     <TabsTrigger value="history">Sejarah</TabsTrigger>
                   </TabsList>
-                  <TabsContent value="vision" className="mt-6 p-8 bg-black/30 rounded-lg border border-accent/30">
+                  <TabsContent value="vision" className="mt-6 p-8 bg-background-elevated/50 rounded-lg border border-accent/40">
                     <h3 className="text-2xl font-bold text-accent">Visi Kami</h3>
-                    <p className="mt-6 text-lg text-gray-300 leading-relaxed">
+                    <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
                       Menjadi tolok ukur kompetisi teknologi dan digital terdepan di Indonesia, yang melahirkan inovator-inovator kelas dunia yang siap menghadapi tantangan global.
                     </p>
                   </TabsContent>
-                  <TabsContent value="mission" className="mt-6 p-8 bg-black/30 rounded-lg border border-accent/30">
+                  <TabsContent value="mission" className="mt-6 p-8 bg-background-elevated/50 rounded-lg border border-accent/40">
                     <h3 className="text-2xl font-bold text-accent">Misi Kami</h3>
-                    <ul className="mt-6 list-disc list-inside space-y-3 text-lg text-gray-300">
+                    <ul className="mt-6 list-disc list-inside space-y-3 text-lg text-muted-foreground">
                       <li>Menyelenggarakan kompetisi yang adil, transparan, dan menantang.</li>
                       <li>Mendorong kolaborasi antara akademisi, industri, dan pemerintah.</li>
                       <li>Memberikan platform bagi peserta untuk menampilkan bakat dan karyanya.</li>
                       <li>Menginspirasi generasi muda untuk mencintai teknologi dan inovasi.</li>
                     </ul>
                   </TabsContent>
-                  <TabsContent value="history" className="mt-6 p-8 bg-black/30 rounded-lg border border-accent/30">
+                  <TabsContent value="history" className="mt-6 p-8 bg-background-elevated/50 rounded-lg border border-accent/40">
                     <h3 className="text-2xl font-bold text-accent">Sejarah Singkat</h3>
-                    <p className="mt-6 text-lg text-gray-300 leading-relaxed">
+                    <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
                       Didirikan pada tahun 2020, IMCESFA berawal dari sebuah inisiatif kecil komunitas mahasiswa untuk menciptakan sebuah acara yang dapat mewadahi semangat kompetisi di bidang IT. Dari tahun ke tahun, kami terus bertumbuh menjadi salah satu acara kompetisi digital paling bergengsi dan dinantikan.
                     </p>
                   </TabsContent>

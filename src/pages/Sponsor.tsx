@@ -50,7 +50,7 @@ const Sponsor = () => {
       />
       <div className="min-h-screen bg-background text-foreground p-4 sm:p-6 md:p-8">
       <div className="max-w-7xl mx-auto">
-        <div className="w-full mb-12 p-8 text-center bg-black/20 backdrop-blur-sm border border-primary/20 rounded-lg">
+        <div className="w-full mb-12 p-8 text-center bg-background-elevated/60 backdrop-blur-sm border border-primary/30 rounded-lg">
             <h1 className="text-4xl md:text-5xl font-bold text-shadow-primary">
               Sponsor Kami
             </h1>

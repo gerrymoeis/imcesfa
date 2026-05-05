@@ -6,39 +6,39 @@ import { Seo } from '@/components/common/Seo';
 
 const timelineEvents = [
   {
-    date: "1 Agustus 2024",
+    date: "1 Agustus 2025",
     title: "Pendaftaran Dibuka",
     description: "Pendaftaran untuk semua cabang kompetisi resmi dibuka. Siapkan tim Anda dan daftarkan diri segera!",
     details: "Proses pendaftaran dilakukan secara online melalui website resmi kami. Pastikan Anda telah membaca semua syarat dan ketentuan yang berlaku untuk setiap cabang kompetisi. Biaya pendaftaran dapat bervariasi tergantung pada kategori yang dipilih."
   },
   {
-    date: "1 September 2024",
+    date: "1 September 2025",
     title: "Batas Akhir Pendaftaran",
     description: "Kesempatan terakhir untuk menjadi bagian dari kompetisi. Pastikan semua persyaratan telah terpenuhi.",
     details: "Semua formulir dan dokumen pendukung harus sudah kami terima sebelum pukul 23:59 WIB. Pendaftaran yang masuk setelah batas waktu tidak akan diproses. Tidak ada perpanjangan waktu."
   },
   {
-    date: "15 September 2024",
+    date: "15 September 2025",
     title: "Pengumuman Peserta Lolos",
     description: "Tim yang berhasil lolos seleksi awal akan diumumkan. Persiapkan diri untuk tahap selanjutnya.",
     details: "Pengumuman akan dipublikasikan di website resmi dan dikirimkan melalui email kepada ketua tim. Peserta yang lolos akan diundang untuk mengikuti tahap Technical Meeting."
   },
   {
-    date: "1 Oktober 2024",
+    date: "1 Oktober 2025",
     title: "Technical Meeting",
     description: "Sesi penjelasan teknis mengenai peraturan dan alur kompetisi untuk semua peserta.",
     details: "Kehadiran di Technical Meeting adalah wajib bagi perwakilan setiap tim. Sesi ini akan membahas detail aturan, sistem penilaian, dan jadwal teknis untuk hari kompetisi. Akan ada sesi tanya jawab langsung dengan panitia."
   },
   {
-    date: "15 Oktober 2024",
+    date: "15 Oktober 2025",
     title: "Hari Kompetisi",
     description: "Hari puncak acara! Para peserta akan berkompetisi menunjukkan keahlian dan inovasi terbaik mereka.",
     details: "Kompetisi akan diselenggarakan secara serentak untuk semua cabang. Peserta diharapkan hadir di lokasi 1 jam sebelum jadwal untuk registrasi ulang. Jadwal detail setiap pertandingan akan dibagikan setelah Technical Meeting."
   },
   {
-    date: "16 Oktober 2024",
+    date: "16 Oktober 2025",
     title: "Pengumuman Pemenang & Penutupan",
-    description: "Pengumuman para juara dan penutupan rangkaian acara IMCESFA 2024.",
+    description: "Pengumuman para juara dan penutupan rangkaian acara IMCESFA 2025.",
     details: "Acara penutupan akan diisi dengan pengumuman pemenang, penyerahan hadiah, dan sesi networking. Acara ini terbuka untuk semua peserta, panitia, dan sponsor."
   },
 ];

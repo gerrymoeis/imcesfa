@@ -48,7 +48,7 @@ function DialogContent({ children, className }: { children: ReactNode, className
   if (!api.open) return null;
 
   return (
-    <div {...api.getBackdropProps()} className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center animate-in fade-in-0">
+    <div {...api.getBackdropProps()} className="fixed inset-0 bg-background-muted/90 backdrop-blur-sm z-50 flex items-center justify-center animate-in fade-in-0">
       <div {...api.getPositionerProps()} className={twMerge("relative", className)}>
         <div {...api.getContentProps()}>
           <Frame

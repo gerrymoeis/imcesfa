@@ -172,8 +172,8 @@ const Hero = () => {
                   ]}
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-xs font-bold text-primary text-shadow-lg text-shadow-primary/50">
-                    2024
+                  <div className="text-sm sm:text-base font-bold text-primary text-shadow-lg text-shadow-primary/50">
+                    2025
                   </div>
                 </div>
               </div>
@@ -203,7 +203,7 @@ const Hero = () => {
                   ]}
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-xs font-bold text-accent text-shadow-lg text-shadow-accent/50">
+                  <div className="text-sm sm:text-base font-bold text-accent text-shadow-lg text-shadow-accent/50">
                     LIVE
                   </div>
                 </div>
